@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F66285E1B3400F0A782 /* CoinRowView.swift */; };
+		E2D53F69285E1B9200F0A782 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F68285E1B9200F0A782 /* PreviewProvider.swift */; };
+		E2D53F6B285E20BF00F0A782 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F6A285E20BF00F0A782 /* Double.swift */; };
 		E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA23F285E015700BBECC4 /* CheetahApp.swift */; };
 		E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA241285E015700BBECC4 /* ContentView.swift */; };
 		E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2D53F66285E1B3400F0A782 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		E2D53F68285E1B9200F0A782 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		E2D53F6A285E20BF00F0A782 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		E2EAA23C285E015700BBECC4 /* Cheetah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheetah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EAA23F285E015700BBECC4 /* CheetahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheetahApp.swift; sourceTree = "<group>"; };
 		E2EAA241285E015700BBECC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				E2EAA250285E04C100BBECC4 /* Color.swift */,
+				E2D53F68285E1B9200F0A782 /* PreviewProvider.swift */,
+				E2D53F6A285E20BF00F0A782 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E2EAA253285E06AC00BBECC4 /* Home */,
+				E2D53F66285E1B3400F0A782 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,12 +217,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
 				E2EAA25A285E07A600BBECC4 /* CircleButtonView.swift in Sources */,
 				E2EAA251285E04C100BBECC4 /* Color.swift in Sources */,
 				E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */,
+				E2D53F69285E1B9200F0A782 /* PreviewProvider.swift in Sources */,
+				E2D53F6B285E20BF00F0A782 /* Double.swift in Sources */,
 				E2EAA25F285E0C9400BBECC4 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
