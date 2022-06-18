@@ -10,6 +10,7 @@
 		E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F66285E1B3400F0A782 /* CoinRowView.swift */; };
 		E2D53F69285E1B9200F0A782 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F68285E1B9200F0A782 /* PreviewProvider.swift */; };
 		E2D53F6B285E20BF00F0A782 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F6A285E20BF00F0A782 /* Double.swift */; };
+		E2D53F6D285E273B00F0A782 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D53F6C285E273B00F0A782 /* HomeViewModel.swift */; };
 		E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA23F285E015700BBECC4 /* CheetahApp.swift */; };
 		E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA241285E015700BBECC4 /* ContentView.swift */; };
 		E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		E2D53F66285E1B3400F0A782 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		E2D53F68285E1B9200F0A782 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		E2D53F6A285E20BF00F0A782 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		E2D53F6C285E273B00F0A782 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E2EAA23C285E015700BBECC4 /* Cheetah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheetah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EAA23F285E015700BBECC4 /* CheetahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheetahApp.swift; sourceTree = "<group>"; };
 		E2EAA241285E015700BBECC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		E2EAA254285E06BD00BBECC4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E2D53F6C285E273B00F0A782 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */,
+				E2D53F6D285E273B00F0A782 /* HomeViewModel.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
