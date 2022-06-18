@@ -12,6 +12,9 @@
 		E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */; };
 		E2EAA24E285E02F900BBECC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA24D285E02F900BBECC4 /* Assets.xcassets */; };
 		E2EAA251285E04C100BBECC4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA250285E04C100BBECC4 /* Color.swift */; };
+		E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA255285E06D100BBECC4 /* HomeView.swift */; };
+		E2EAA25A285E07A600BBECC4 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */; };
+		E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2EAA24D285E02F900BBECC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EAA250285E04C100BBECC4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E2EAA255285E06D100BBECC4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,9 @@
 		E2EAA233285E015700BBECC4 = {
 			isa = PBXGroup;
 			children = (
+				E2EAA257285E078000BBECC4 /* Components */,
+				E2EAA254285E06BD00BBECC4 /* ViewModels */,
+				E2EAA252285E06A200BBECC4 /* Views */,
 				E2EAA24F285E04B900BBECC4 /* Extensions */,
 				E2EAA23E285E015700BBECC4 /* Cheetah */,
 				E2EAA23D285E015700BBECC4 /* Products */,
@@ -76,6 +85,46 @@
 				E2EAA250285E04C100BBECC4 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2EAA252285E06A200BBECC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2EAA253285E06AC00BBECC4 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2EAA253285E06AC00BBECC4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2EAA255285E06D100BBECC4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E2EAA254285E06BD00BBECC4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E2EAA257285E078000BBECC4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2EAA258285E079900BBECC4 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E2EAA258285E079900BBECC4 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */,
+				E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
+				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
+				E2EAA25A285E07A600BBECC4 /* CircleButtonView.swift in Sources */,
 				E2EAA251285E04C100BBECC4 /* Color.swift in Sources */,
+				E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
