@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA23F285E015700BBECC4 /* CheetahApp.swift */; };
 		E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA241285E015700BBECC4 /* ContentView.swift */; };
-		E2EAA244285E015900BBECC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA243285E015900BBECC4 /* Assets.xcassets */; };
 		E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */; };
+		E2EAA24E285E02F900BBECC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EAA24D285E02F900BBECC4 /* Assets.xcassets */; };
+		E2EAA251285E04C100BBECC4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA250285E04C100BBECC4 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2EAA23C285E015700BBECC4 /* Cheetah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheetah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EAA23F285E015700BBECC4 /* CheetahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheetahApp.swift; sourceTree = "<group>"; };
 		E2EAA241285E015700BBECC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E2EAA243285E015900BBECC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2EAA24D285E02F900BBECC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2EAA250285E04C100BBECC4 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		E2EAA233285E015700BBECC4 = {
 			isa = PBXGroup;
 			children = (
+				E2EAA24F285E04B900BBECC4 /* Extensions */,
 				E2EAA23E285E015700BBECC4 /* Cheetah */,
 				E2EAA23D285E015700BBECC4 /* Products */,
 			);
@@ -53,7 +56,7 @@
 			children = (
 				E2EAA23F285E015700BBECC4 /* CheetahApp.swift */,
 				E2EAA241285E015700BBECC4 /* ContentView.swift */,
-				E2EAA243285E015900BBECC4 /* Assets.xcassets */,
+				E2EAA24D285E02F900BBECC4 /* Assets.xcassets */,
 				E2EAA245285E015900BBECC4 /* Preview Content */,
 			);
 			path = Cheetah;
@@ -65,6 +68,14 @@
 				E2EAA246285E015900BBECC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2EAA24F285E04B900BBECC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2EAA250285E04C100BBECC4 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EAA24E285E02F900BBECC4 /* Assets.xcassets in Resources */,
 				E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */,
-				E2EAA244285E015900BBECC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
+				E2EAA251285E04C100BBECC4 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +285,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,6 +315,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
