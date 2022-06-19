@@ -21,6 +21,7 @@
 		E2EAA25A285E07A600BBECC4 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */; };
 		E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */; };
 		E2EAA25F285E0C9400BBECC4 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA25E285E0C9400BBECC4 /* CoinModel.swift */; };
+		E2FE58B3285F232800C8D3CB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58B2285F232800C8D3CB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		E2EAA25E285E0C9400BBECC4 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		E2FE58B2285F232800C8D3CB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		E2D53F6E285E2BA700F0A782 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE58B2285F232800C8D3CB /* NetworkManager.swift */,
 				E2D53F6F285E2BD500F0A782 /* NetworkLayer.swift */,
 			);
 			path = Services;
@@ -63,6 +66,7 @@
 		E2EAA233285E015700BBECC4 = {
 			isa = PBXGroup;
 			children = (
+				E2FE58B1285F22F600C8D3CB /* Utilities */,
 				E2D53F6E285E2BA700F0A782 /* Services */,
 				E2EAA257285E078000BBECC4 /* Components */,
 				E2EAA25D285E0C5D00BBECC4 /* Models */,
@@ -161,6 +165,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E2FE58B1285F22F600C8D3CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +245,7 @@
 				E2D53F70285E2BD500F0A782 /* NetworkLayer.swift in Sources */,
 				E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */,
 				E2D53F6D285E273B00F0A782 /* HomeViewModel.swift in Sources */,
+				E2FE58B3285F232800C8D3CB /* NetworkManager.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
