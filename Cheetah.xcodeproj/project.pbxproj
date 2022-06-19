@@ -22,6 +22,9 @@
 		E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */; };
 		E2EAA25F285E0C9400BBECC4 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EAA25E285E0C9400BBECC4 /* CoinModel.swift */; };
 		E2FE58B3285F232800C8D3CB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58B2285F232800C8D3CB /* NetworkManager.swift */; };
+		E2FE58B8285F31A600C8D3CB /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58B7285F31A600C8D3CB /* CoinImageView.swift */; };
+		E2FE58BA285F32CD00C8D3CB /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58B9285F32CD00C8D3CB /* CoinImageService.swift */; };
+		E2FE58BC285F340100C8D3CB /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58BB285F340100C8D3CB /* CoinImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		E2EAA25E285E0C9400BBECC4 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		E2FE58B2285F232800C8D3CB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E2FE58B7285F31A600C8D3CB /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		E2FE58B9285F32CD00C8D3CB /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
+		E2FE58BB285F340100C8D3CB /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			children = (
 				E2FE58B2285F232800C8D3CB /* NetworkManager.swift */,
 				E2D53F6F285E2BD500F0A782 /* NetworkLayer.swift */,
+				E2FE58B9285F32CD00C8D3CB /* CoinImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E2D53F6C285E273B00F0A782 /* HomeViewModel.swift */,
+				E2FE58BB285F340100C8D3CB /* CoinImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -143,18 +151,11 @@
 		E2EAA257285E078000BBECC4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E2EAA258285E079900BBECC4 /* CircleButton */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		E2EAA258285E079900BBECC4 /* CircleButton */ = {
-			isa = PBXGroup;
-			children = (
 				E2EAA259285E07A600BBECC4 /* CircleButtonView.swift */,
 				E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */,
+				E2FE58B7285F31A600C8D3CB /* CoinImageView.swift */,
 			);
-			path = CircleButton;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E2EAA25D285E0C5D00BBECC4 /* Models */ = {
@@ -247,13 +248,16 @@
 				E2D53F6D285E273B00F0A782 /* HomeViewModel.swift in Sources */,
 				E2FE58B3285F232800C8D3CB /* NetworkManager.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
+				E2FE58B8285F31A600C8D3CB /* CoinImageView.swift in Sources */,
 				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
 				E2EAA240285E015700BBECC4 /* CheetahApp.swift in Sources */,
 				E2EAA25A285E07A600BBECC4 /* CircleButtonView.swift in Sources */,
 				E2EAA251285E04C100BBECC4 /* Color.swift in Sources */,
 				E2EAA25C285E0A0F00BBECC4 /* CircleButtonAnimationView.swift in Sources */,
+				E2FE58BC285F340100C8D3CB /* CoinImageViewModel.swift in Sources */,
 				E2D53F69285E1B9200F0A782 /* PreviewProvider.swift in Sources */,
 				E2D53F6B285E20BF00F0A782 /* Double.swift in Sources */,
+				E2FE58BA285F32CD00C8D3CB /* CoinImageService.swift in Sources */,
 				E2EAA25F285E0C9400BBECC4 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
