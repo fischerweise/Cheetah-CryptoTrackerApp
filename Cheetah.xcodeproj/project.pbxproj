@@ -28,6 +28,9 @@
 		E2FE58BE285F39F100C8D3CB /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58BD285F39F100C8D3CB /* LocalFileManager.swift */; };
 		E2FE58C0285F4C4A00C8D3CB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58BF285F4C4A00C8D3CB /* SearchBar.swift */; };
 		E2FE58C2285F574500C8D3CB /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58C1285F574500C8D3CB /* UIApplication.swift */; };
+		E2FE58C4285F5D5300C8D3CB /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58C3285F5D5300C8D3CB /* StatisticModel.swift */; };
+		E2FE58C6285F5E7200C8D3CB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58C5285F5E7200C8D3CB /* StatisticView.swift */; };
+		E2FE58C8285F613700C8D3CB /* HomeStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FE58C7285F613700C8D3CB /* HomeStatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		E2FE58BD285F39F100C8D3CB /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		E2FE58BF285F4C4A00C8D3CB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		E2FE58C1285F574500C8D3CB /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		E2FE58C3285F5D5300C8D3CB /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		E2FE58C5285F5E7200C8D3CB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		E2FE58C7285F613700C8D3CB /* HomeStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +138,8 @@
 		E2EAA252285E06A200BBECC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2FE58C9285F614000C8D3CB /* Coin */,
 				E2EAA253285E06AC00BBECC4 /* Home */,
-				E2D53F66285E1B3400F0A782 /* CoinRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E2EAA255285E06D100BBECC4 /* HomeView.swift */,
+				E2FE58C7285F613700C8D3CB /* HomeStatisticsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				E2EAA25B285E0A0F00BBECC4 /* CircleButtonAnimationView.swift */,
 				E2FE58B7285F31A600C8D3CB /* CoinImageView.swift */,
 				E2FE58BF285F4C4A00C8D3CB /* SearchBar.swift */,
+				E2FE58C5285F5E7200C8D3CB /* StatisticView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E2EAA25E285E0C9400BBECC4 /* CoinModel.swift */,
+				E2FE58C3285F5D5300C8D3CB /* StatisticModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +189,14 @@
 				E2FE58BD285F39F100C8D3CB /* LocalFileManager.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2FE58C9285F614000C8D3CB /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				E2D53F66285E1B3400F0A782 /* CoinRowView.swift */,
+			);
+			path = Coin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,12 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FE58C4285F5D5300C8D3CB /* StatisticModel.swift in Sources */,
 				E2D53F70285E2BD500F0A782 /* NetworkLayer.swift in Sources */,
 				E2D53F67285E1B3400F0A782 /* CoinRowView.swift in Sources */,
 				E2D53F6D285E273B00F0A782 /* HomeViewModel.swift in Sources */,
 				E2FE58B3285F232800C8D3CB /* NetworkManager.swift in Sources */,
 				E2FE58BE285F39F100C8D3CB /* LocalFileManager.swift in Sources */,
+				E2FE58C8285F613700C8D3CB /* HomeStatisticsView.swift in Sources */,
 				E2FE58C0285F4C4A00C8D3CB /* SearchBar.swift in Sources */,
+				E2FE58C6285F5E7200C8D3CB /* StatisticView.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E2FE58B8285F31A600C8D3CB /* CoinImageView.swift in Sources */,
 				E2FE58C2285F574500C8D3CB /* UIApplication.swift in Sources */,
