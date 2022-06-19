@@ -16,6 +16,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
             VStack {
                 homeHeader
+                SearchBar(searchText: $viewModel.searchText)
                columnTitles
                 if !showPortfolio {
                     allCoinsList
@@ -37,7 +38,6 @@ struct HomeView_Previews: PreviewProvider {
             HomeView()
                 .navigationBarHidden(true)
         }
-        .preferredColorScheme(.dark)
         .environmentObject(dev.homeViewModel)
     }
 }
