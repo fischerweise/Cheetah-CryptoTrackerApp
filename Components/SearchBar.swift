@@ -16,7 +16,7 @@ struct SearchBar: View {
                 .foregroundColor(
                     searchText.isEmpty ? Color.theme.secondaryText : Color.theme.accent
                 )
-            TextField("Search by name or symbol...", text: $searchText)
+            TextField("Search Coin Pairs...", text: $searchText)
                 .foregroundColor(Color.theme.accent)
                 .disableAutocorrection(true)
                 .overlay(
