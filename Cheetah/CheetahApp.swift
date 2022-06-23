@@ -23,6 +23,7 @@ struct CheetahApp: App {
                     HomeView()
                         .navigationBarHidden(true)
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 .environmentObject(viewModel)
                 ZStack {
                     if showLaunchView {

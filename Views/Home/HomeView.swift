@@ -26,14 +26,20 @@ struct HomeView: View {
                 homeHeader
                 HomeStatisticsView(showPortfolio: $showPortfolio)
                 SearchBar(searchText: $viewModel.searchText)
-               columnTitles
+                columnTitles
                 if !showPortfolio {
                     allCoinsList
-                    .transition(.move(edge: .leading))
+                        .transition(.move(edge: .leading))
                 }
                 if showPortfolio {
-                    portfolioCoinsList
-                        .transition(.move(edge: .trailing))
+                    ZStack(alignment: .top) {
+                        if viewModel.portfolioCoins.isEmpty && viewModel.searchText.isEmpty {
+                            emptyText
+                        } else {
+                            portfolioCoinsList
+                        }
+                    }
+                    .transition(.move(edge: .trailing))
                 }
                 Spacer(minLength: 0)
             }
@@ -102,6 +108,16 @@ extension HomeView {
         }
         .listStyle(PlainListStyle())
     }
+    
+    private var emptyText: some View {
+        Text("Click the ➕ Button to Add a Coin 💸 and Take Us to the Moooon...!🚀🥳🌕")
+            .font(.headline)
+            .foregroundColor(Color.theme.accent)
+            .fontWeight(.heavy)
+            .multilineTextAlignment(.center)
+            .padding(50)
+    }
+    
     private var portfolioCoinsList: some View {
         List {
             ForEach(viewModel.portfolioCoins) { coin in
