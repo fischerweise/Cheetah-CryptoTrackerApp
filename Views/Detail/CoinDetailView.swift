@@ -20,6 +20,7 @@ struct CoinDetailLoadingView: View {
 
 struct CoinDetailView: View {
     @StateObject private var viewModel: CoinDetailViewModel
+    @State private var showFullDescription: Bool = false
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -38,10 +39,12 @@ struct CoinDetailView: View {
                 VStack(spacing: 20) {
                     overviewTitle
                     Divider()
+                    descriptionSection
                     overviewGrid
                     additionalTitle
                     Divider()
                     additionalGrid
+                   websiteSection
                 }
                 .padding()
             }
@@ -50,7 +53,7 @@ struct CoinDetailView: View {
         .navigationTitle(viewModel.coin.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-              navigationBarTrailingItems
+                navigationBarTrailingItems
             }
         }
     }
@@ -60,7 +63,7 @@ struct CoinDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             CoinDetailView(coin: dev.coin)
-
+            
         }
     }
 }
@@ -92,6 +95,31 @@ extension CoinDetailView {
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
+    private var descriptionSection: some View {
+        ZStack {
+            if let coinDescription = viewModel.coinDescription, !coinDescription.isEmpty {
+                VStack(alignment: .leading) {
+                    Text(coinDescription)
+                        .lineLimit(showFullDescription ? nil : 8)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                    Button {
+                        withAnimation(.easeInOut) {
+                            showFullDescription.toggle()
+                        }
+                    } label: {
+                        Text(showFullDescription ? "Read Less..." : "Read More...")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .padding(.vertical, 4)
+                    }
+                    .accentColor(.blue)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                }
+            }
+        }
+    }
     private var overviewGrid: some View {
         LazyVGrid(columns: columns, alignment: .leading, spacing: spacing, pinnedViews: []) {
             ForEach(viewModel.overviewStatistics) { stat in
@@ -105,5 +133,18 @@ extension CoinDetailView {
                 StatisticView(statisticModel: stat)
             }
         }
+    }
+    private var websiteSection: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            if let website = viewModel.coinWebsite, let url = URL(string: website) {
+                Link("Website", destination: url)
+            }
+            if let reddit = viewModel.coinRedditPage, let url = URL(string: reddit) {
+                Link("Reddit", destination: url)
+            }
+        }
+        .accentColor(.blue)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .font(.headline)
     }
 }
