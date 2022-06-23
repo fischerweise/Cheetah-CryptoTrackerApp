@@ -9,10 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    let defaultURL = URL(string: "https://www.google.com")!
     let githubURL = URL(string: "https://github.com/fischerweise")!
     let coffeeURL = URL(string: "https://www.buymeacoffee.com/fischerweise")!
-    let linkedinURL = URL(string: "https://www.linkedin.com/in/mustafapekdemir/")
+    let linkedinURL = URL(string: "https://www.linkedin.com/in/mustafapekdemir/")!
     
     var body: some View {
         NavigationView {
@@ -54,6 +53,7 @@ extension SettingsView {
             .padding(.vertical)
             Link("Follow me 🥳🥳", destination: githubURL)
             Link("May we drink a coffee together? 🤙🏻☕️", destination: coffeeURL)
+            Link("My LinkedIn Profile 🌿💥", destination: linkedinURL)
         }
     }
 }

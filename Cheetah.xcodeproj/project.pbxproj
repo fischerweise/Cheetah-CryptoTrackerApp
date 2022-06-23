@@ -11,6 +11,8 @@
 		E202A8BB2864B4AB0008281F /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202A8BA2864B4AB0008281F /* DateFormatter.swift */; };
 		E202A8BD2864BACC0008281F /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202A8BC2864BACC0008281F /* StringExtention.swift */; };
 		E202A8C02864C2680008281F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202A8BF2864C2680008281F /* SettingsView.swift */; };
+		E202A8C32864CA4F0008281F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E202A8C22864CA4F0008281F /* LaunchScreen.storyboard */; };
+		E202A8C52864CCF60008281F /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202A8C42864CCF60008281F /* LaunchView.swift */; };
 		E218D0C92860B946000021CE /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218D0C82860B946000021CE /* MarketDataModel.swift */; };
 		E218D0CB2860BAB5000021CE /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218D0CA2860BAB5000021CE /* MarketDataService.swift */; };
 		E218D0CE2860C51A000021CE /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218D0CD2860C51A000021CE /* PortfolioView.swift */; };
@@ -54,6 +56,8 @@
 		E202A8BA2864B4AB0008281F /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		E202A8BC2864BACC0008281F /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
 		E202A8BF2864C2680008281F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E202A8C22864CA4F0008281F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E202A8C42864CCF60008281F /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		E218D0C82860B946000021CE /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		E218D0CA2860BAB5000021CE /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		E218D0CD2860C51A000021CE /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 				E202A8BF2864C2680008281F /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		E202A8C12864CA3C0008281F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E202A8C22864CA4F0008281F /* LaunchScreen.storyboard */,
+				E202A8C42864CCF60008281F /* LaunchView.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		E218D0CC2860C511000021CE /* Portfolio */ = {
@@ -200,6 +213,7 @@
 		E2EAA252285E06A200BBECC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E202A8C12864CA3C0008281F /* Launch */,
 				E202A8BE2864C23F0008281F /* Settings */,
 				E219B99B28637B5900617F76 /* Detail */,
 				E218D0CC2860C511000021CE /* Portfolio */,
@@ -329,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E202A8C32864CA4F0008281F /* LaunchScreen.storyboard in Resources */,
 				E2EAA24E285E02F900BBECC4 /* Assets.xcassets in Resources */,
 				E2EAA247285E015900BBECC4 /* Preview Assets.xcassets in Resources */,
 			);
@@ -357,6 +372,7 @@
 				E219B9A1286384B000617F76 /* CoinDetailViewModel.swift in Sources */,
 				E2EAA242285E015700BBECC4 /* ContentView.swift in Sources */,
 				E218D0D02860C74E000021CE /* XMarkButton.swift in Sources */,
+				E202A8C52864CCF60008281F /* LaunchView.swift in Sources */,
 				E2FE58B8285F31A600C8D3CB /* CoinImageView.swift in Sources */,
 				E2FE58C2285F574500C8D3CB /* UIApplication.swift in Sources */,
 				E2EAA256285E06D100BBECC4 /* HomeView.swift in Sources */,
@@ -513,6 +529,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -543,6 +560,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
