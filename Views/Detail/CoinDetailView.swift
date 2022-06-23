@@ -32,19 +32,27 @@ struct CoinDetailView: View {
     }
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                Text("")
-                    .frame(height: 150)
-                overviewTitle
-                Divider()
-                overviewGrid
-                additionalTitle
-                Divider()
-                additionalGrid
+            VStack {
+                CoinChartView(coin: viewModel.coin)
+                    .padding(.vertical)
+                VStack(spacing: 20) {
+                    overviewTitle
+                    Divider()
+                    overviewGrid
+                    additionalTitle
+                    Divider()
+                    additionalGrid
+                }
+                .padding()
             }
-            .padding()
+            
         }
         .navigationTitle(viewModel.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+              navigationBarTrailingItems
+            }
+        }
     }
 }
 
@@ -58,6 +66,17 @@ struct CoinDetailView_Previews: PreviewProvider {
 }
 
 extension CoinDetailView {
+    private var navigationBarTrailingItems: some View {
+        HStack {
+            HStack {
+                Text(viewModel.coin.symbol.uppercased())
+                    .font(.headline)
+                    .foregroundColor(Color.theme.secondaryText)
+                CoinImageView(coin: viewModel.coin)
+                    .frame(width: 25, height: 25)
+            }
+        }
+    }
     private var overviewTitle: some View {
         Text("Overview")
             .font(.title)
